@@ -1,0 +1,156 @@
+header{
+    background-color:  #3498db;
+    padding: 30px;
+    color: white;
+    font-size: 30px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+  }
+  
+  body {
+    background-color: rgb(229, 239, 247);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tasks-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+  }
+  
+  .tasks-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .button-add {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .tasks-container-backlog,
+  .tasks-container-in-progress,
+  .tasks-container-done,
+  .tasks-container-trash {
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .tasks-container-backlog span,
+  .tasks-container-in-progress span,
+  .tasks-container-done span,
+  .tasks-container-trash span {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tasks-container-backlog span {
+    background-color: #bcbcbc;
+    color: #838181;
+    font-weight: bold; /* Жирный шрифт */
+  }
+  
+  .tasks-container-in-progress span {
+    background-color: #c4e2f6;
+    color: #3498db;
+    font-weight: bold; /* Жирный шрифт */
+  }
+  
+  .tasks-container-done span {
+    background-color: #a9f4c8;
+    color: #6bc38f;
+    font-weight: bold; /* Жирный шрифт */
+  }
+  
+  .tasks-container-trash span {
+    background-color: #eeaaa2;
+    color: #db7165;
+    font-weight: bold; /* Жирный шрифт */
+  }
+  
+  .tasks-container-backlog ul,
+  .tasks-container-in-progress ul,
+  .tasks-container-done ul,
+  .tasks-container-trash ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tasks-container-backlog li,
+  .tasks-container-in-progress li,
+  .tasks-container-done li,
+  .tasks-container-trash li {
+    background-color: white;
+    list-style-position: inside;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s all linear;
+  }
+  
+  .tasks-container-backlog li {
+    border-left: 10px solid #bcbcbc;
+  }
+  
+  .tasks-container-in-progress li {
+    border-left: 10px solid #c4e2f6;
+  }
+  
+  .tasks-container-done li {
+    border-left: 10px solid #a9f4c8;
+  }
+  
+  .tasks-container-trash li {
+    border-left: 10px solid #eeaaa2;
+  }
+  
+  .button-delete {
+    background-color: rgb(211, 75, 75);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s all linear;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

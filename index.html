@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Никифорова А.А.</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        Список задач
+    </header>
+
+    <form class="tasks-form">
+        <h2>Новая задача</h2>
+        <div class="input-container">
+            <input type="text" placeholder="Название задачи...">
+            <button class="button-add">+ Добавить</button>
+        </div>
+    </form>
+
+    <section class="grid-container">
+        <div class="tasks-container-backlog">
+            <span>Бэклог</span>
+            <ul>
+                <li>Выучить JS</li>
+                <li>Выучить React</li>
+                <li>Сделать домашку</li>
+            </ul>
+        </div>
+
+        <div class="tasks-container-in-progress">
+            <span>В процессе</span>
+            <ul>
+                <li>Выпить смузи</li>
+                <li>Попить воды</li>
+            </ul>
+        </div>
+
+        <div class="tasks-container-done">
+            <span>Готово</span>
+            <ul>
+                <li>Позвонить маме</li>
+                <li>Погладить кота</li>
+            </ul>
+        </div>
+
+        <div class="tasks-container-trash">
+            <span>Корзина</span>
+            <ul>
+                <li>Сходить погулять</li>
+                <li>Прочитать Войну и Мир</li>
+            </ul>
+            <button class="button-delete">Х Очистить</button>
+        </div>
+    </section>
+</body>
+</html>
